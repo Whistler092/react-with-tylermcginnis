@@ -59,7 +59,7 @@ function ReposGrid({ repos }) {
             >
               <ul className="card-list">
                 <li>
-                  <Tooltip text="Github Username">
+                  <Tooltip text="Github Username" >
                     <FaUser color="rgb(255, 191,116)" size={22} />
                     <a target="_blank" href={`https://github.com/${login}`}>{login}</a>
                   </Tooltip>

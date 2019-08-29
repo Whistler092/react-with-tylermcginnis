@@ -45,7 +45,8 @@ function ReposGrid({ repos }) {
           html_url,
           stargazers_count,
           forks,
-          open_issues
+          open_issues,
+          full_name
         } = repo;
         const { login, avatar_url } = owner;
 
@@ -55,13 +56,13 @@ function ReposGrid({ repos }) {
               header={`#${index + 1}`}
               avatar={avatar_url}
               href={html_url}
-              name={login}
+              name={name}
             >
               <ul className="card-list">
                 <li>
                   <Tooltip text="Github Username" >
                     <FaUser color="rgb(255, 191,116)" size={22} />
-                    <a target="_blank" href={`https://github.com/${login}`}>{login}</a>
+                    <a target="_blank" href={`https://github.com/${login}`}>{name}</a>
                   </Tooltip>
                 </li>
                 <li>

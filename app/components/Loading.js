@@ -7,19 +7,15 @@ const styles = {
         left: '0',
         right: '0',
         marginTop: '20px',
-        textAlign: 'center' 
+        textAlign: 'center'
     }
 }
 
 export default class Loading extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            content: 'Loading'
-        }
+    state = {
+        content: 'Loading'
     }
-
+    
     componentDidMount() {
         this.interval = window.setInterval(() => {
             this.state.content === 'Loading' + '...'

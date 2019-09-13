@@ -11,7 +11,7 @@ import Card from "./Card";
 import Tooltip from "./Tooltip";
 
 function LanguagesNav({ selected, onUpdateLanguage }) {
-  const languages = ["All", "Javascript", "Ruby", "Java", "CSS", "Python", "cSharp"];
+  const languages = ["All", "Javascript", "Java", "CSS", "Python", "cSharp", "Erlang"];
   return (
     <ul className="flex-center">
       {languages.map(language => (
